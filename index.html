@@ -20,6 +20,7 @@
 <meta property="og:title" content="ГЛАМУР — семейный ресторан в Алматы">
 <meta property="og:description" content="Домашняя грузинская и авторская кухня · живая музыка · летняя веранда · банкеты. 4.7★ и 2436 отзывов на 2ГИС.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="assets/drink1.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%233a1418'/%3E%3Ctext x='16' y='23' font-family='Georgia' font-size='20' fill='%23c9a24b' text-anchor='middle'%3E%D0%93%3C/text%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -79,8 +80,9 @@
   .btn-out:hover{background:var(--gold);color:#3a1418}
   .btn-sm{padding:11px 22px;font-size:.7rem}
 
-  .hero{position:relative;min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;
-        background:radial-gradient(ellipse 70% 55% at 50% 40%,#54222a,var(--wine) 72%)}
+  .hero{position:relative;min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;background:var(--wine)}
+  .hero-bg{position:absolute;inset:0;background:url('assets/drink1.jpg') center/cover;transform:scale(1.05)}
+  .hero-bg::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 75% 60% at 50% 42%,rgba(58,20,24,.72),rgba(42,12,16,.92))}
   .hero-inner{position:relative;z-index:2;padding:60px 20px;max-width:820px}
   .hero-frame{display:inline-block;padding:38px 46px;border:1px solid var(--gold);position:relative}
   .hero-frame::before,.hero-frame::after{content:"✦";position:absolute;color:var(--gold);font-size:1rem}
@@ -115,6 +117,9 @@
   .add:hover{background:var(--gold-lt);transform:scale(1.08)}
   .price-note{text-align:center;color:var(--muted);font-size:.84rem;margin-top:26px}
   .price-note a{color:var(--gold-lt);text-decoration:none;font-weight:600;border-bottom:1px solid var(--gold)}
+  .glm-gal figure img{transition:transform .6s ease}
+  .glm-gal figure:hover img{transform:scale(1.06)}
+  @media(max-width:640px){.glm-gal{grid-template-columns:repeat(2,1fr)!important}}
 
   /* cart */
   .cart-bar{position:fixed;left:0;right:0;bottom:0;z-index:70;background:var(--gold);color:#3a1418;transform:translateY(120%);transition:transform .3s;box-shadow:0 -6px 24px rgba(0,0,0,.35)}
@@ -174,6 +179,7 @@
 </header>
 
 <div class="hero">
+  <div class="hero-bg"></div>
   <div class="hero-inner">
     <div class="hero-frame">
       <div class="kick">Семейный ресторан · Алматы</div>
@@ -228,6 +234,21 @@
       </div>
     </div>
     <p class="price-note reveal">Цены указаны для примера — заменяются на реальные из меню ресторана. Актуальное меню — по кнопке ниже.</p>
+  </div>
+</section>
+
+<section class="reveal" style="padding-top:0">
+  <div class="wrap center">
+    <div class="eyebrow">Атмосфера</div>
+    <div class="orn">✦ ✦ ✦</div>
+    <h2 class="title" style="margin-bottom:34px">Вкусно и красиво</h2>
+    <!-- РЕАЛЬНЫЕ фото блюд и напитков из их Instagram @glamur_almaty_ -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px" class="glm-gal">
+      <figure style="overflow:hidden;border-radius:var(--radius);aspect-ratio:4/5;margin:0"><img src="assets/drink1.jpg" alt="Авторские коктейли ГЛАМУР" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy"></figure>
+      <figure style="overflow:hidden;border-radius:var(--radius);aspect-ratio:4/5;margin:0"><img src="assets/food1.jpg" alt="Домашняя кухня ГЛАМУР" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy"></figure>
+      <figure style="overflow:hidden;border-radius:var(--radius);aspect-ratio:4/5;margin:0"><img src="assets/tray1.jpg" alt="Напитки ГЛАМУР Алматы" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy"></figure>
+    </div>
+    <p class="price-note reveal"><a href="https://www.instagram.com/glamur_almaty_">Больше фото в Instagram @glamur_almaty_ →</a></p>
   </div>
 </section>
 
