@@ -20,7 +20,9 @@
 <meta property="og:title" content="ГЛАМУР — семейный ресторан в Алматы">
 <meta property="og:description" content="Домашняя грузинская и авторская кухня · живая музыка · летняя веранда · банкеты. 4.7★ и 2436 отзывов на 2ГИС.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/drink1.jpg">
+<meta property="og:url" content="https://glamur-almaty-site.vercel.app/">
+<meta property="og:image" content="https://glamur-almaty-site.vercel.app/assets/drink1.jpg">
+<link rel="canonical" href="https://glamur-almaty-site.vercel.app/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%233a1418'/%3E%3Ctext x='16' y='23' font-family='Georgia' font-size='20' fill='%23c9a24b' text-anchor='middle'%3E%D0%93%3C/text%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,6 +34,8 @@
   "@context": "https://schema.org",
   "@type": "Restaurant",
   "name": "ГЛАМУР",
+  "url": "https://glamur-almaty-site.vercel.app/",
+  "image": "https://glamur-almaty-site.vercel.app/assets/drink1.jpg",
   "description": "Семейный ресторан в Алматы: домашняя грузинская и авторская кухня, живая музыка, летняя веранда, банкеты.",
   "servesCuisine": ["Грузинская","Европейская","Домашняя"],
   "priceRange": "₸₸",
@@ -145,7 +149,8 @@
   .feat{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
   @media(max-width:760px){.feat{grid-template-columns:1fr}}
   .fcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:34px 28px;text-align:center}
-  .fcard .ic{font-size:1.8rem;margin-bottom:10px}
+  .fcard .ic{margin-bottom:14px;color:var(--gold-lt);display:flex;justify-content:center}
+  .fcard .ic svg{width:34px;height:34px;stroke:currentColor;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
   .fcard h3{font-size:1.4rem;color:#fbf1df;margin-bottom:6px}
   .fcard p{color:var(--muted);font-size:.92rem}
 
@@ -199,7 +204,7 @@
   <div class="stat-grid">
     <div class="stat"><div class="n">4.7★</div><div class="l">2436 отзывов 2ГИС</div></div>
     <div class="stat"><div class="n">100</div><div class="l">мест для банкета</div></div>
-    <div class="stat"><div class="n">🎶</div><div class="l">живая музыка</div></div>
+    <div class="stat"><div class="n">Live</div><div class="l">живая музыка</div></div>
     <div class="stat"><div class="n">10–01</div><div class="l">ежедневно</div></div>
   </div>
 </div>
@@ -243,9 +248,8 @@
     <div class="orn">✦ ✦ ✦</div>
     <h2 class="title" style="margin-bottom:34px">Вкусно и красиво</h2>
     <!-- РЕАЛЬНЫЕ фото блюд и напитков из их Instagram @glamur_almaty_ -->
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px" class="glm-gal">
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:760px;margin:0 auto" class="glm-gal">
       <figure style="overflow:hidden;border-radius:var(--radius);aspect-ratio:4/5;margin:0"><img src="assets/drink1.jpg" alt="Авторские коктейли ГЛАМУР" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy"></figure>
-      <figure style="overflow:hidden;border-radius:var(--radius);aspect-ratio:4/5;margin:0"><img src="assets/food1.jpg" alt="Домашняя кухня ГЛАМУР" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy"></figure>
       <figure style="overflow:hidden;border-radius:var(--radius);aspect-ratio:4/5;margin:0"><img src="assets/tray1.jpg" alt="Напитки ГЛАМУР Алматы" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy"></figure>
     </div>
     <p class="price-note reveal"><a href="https://www.instagram.com/glamur_almaty_">Больше фото в Instagram @glamur_almaty_ →</a></p>
@@ -258,9 +262,9 @@
     <div class="orn">✦ ✦ ✦</div>
     <h2 class="title" style="margin-bottom:34px">Тепло, как дома</h2>
     <div class="feat">
-      <div class="fcard"><div class="ic">🍷</div><h3>Домашняя кухня</h3><p>«Дәмі үйдегідей» — вкусно, как дома. Грузинские и авторские блюда, щедрые порции.</p></div>
-      <div class="fcard"><div class="ic">👨‍👩‍👧</div><h3>Для всей семьи</h3><p>Уютно и светло, приятно приходить с детьми. Тёплая, семейная атмосфера.</p></div>
-      <div class="fcard"><div class="ic">🎉</div><h3>Банкеты до 100 мест</h3><p>Живая музыка, летняя веранда, танцпол — проведём ваше торжество.</p></div>
+      <div class="fcard"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15a5 5 0 0 0 5-5c0-2-.6-4.4-2-8H9c-1.4 3.6-2 6-2 8a5 5 0 0 0 5 5Z"/><path d="M12 15v7"/><path d="M8 22h8"/><path d="M7.2 7h9.6"/></svg></div><h3>Домашняя кухня</h3><p>«Дәмі үйдегідей» — вкусно, как дома. Грузинские и авторские блюда, щедрые порции.</p></div>
+      <div class="fcard"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Для всей семьи</h3><p>Уютно и светло, приятно приходить с детьми. Тёплая, семейная атмосфера.</p></div>
+      <div class="fcard"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.8 11.3 2 22l10.7-3.79"/><path d="M4 3h.01"/><path d="M22 8h.01"/><path d="M15 2h.01"/><path d="M22 20h.01"/><path d="m22 2-2.24.75a2.9 2.9 0 0 0-1.96 3.12c.1.86-.57 1.63-1.45 1.63h-.38c-.86 0-1.6.6-1.76 1.44L14 10"/><path d="m22 13-.82-.33c-.86-.34-1.82.2-1.98 1.11-.11.7-.72 1.22-1.43 1.22H17"/><path d="m11 2 .33.82c.34.86-.2 1.82-1.11 1.98-.7.11-1.22.72-1.22 1.43V7"/><path d="M11 13c1.93 1.93 2.83 4.17 2 5-.83.83-3.07-.07-5-2-1.93-1.93-2.83-4.17-2-5 .83-.83 3.07.07 5 2Z"/></svg></div><h3>Банкеты до 100 мест</h3><p>Живая музыка, летняя веранда, танцпол — проведём ваше торжество.</p></div>
     </div>
   </div>
 </section>
